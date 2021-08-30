@@ -8,6 +8,16 @@
 
 <hr>
 
+Se realiza la prueba tecnica para Logysto de acuerdo a los requerimientos, se realiza el consumo de los servicios de **Here Maps** y **Tomtom maps**.
+
+las variables de entorno de la aplicacion se encuentran en el codigo `src/config/index.js`.
+
+Para probar la aplicacion se agregan la coleccion y las variables de postman.
+
+[Collection Postman](https://github.com/ilder948/PruebaLogysto/blob/master/POSTMAN/Logysto.postman_collection.json)
+
+[Environments Postman](https://github.com/ilder948/PruebaLogysto/blob/master/POSTMAN/Logysto%20Environment.postman_environment.json)
+
 <hr>
 # Endpoints
 
@@ -18,7 +28,7 @@
 > POST  
 > `{{urlBase}}/register`
 
-- No requiere autenticacion
+- Does not require authentication
 
 **Body json**
 
@@ -48,7 +58,7 @@
 
 **Error Response**
 
-- User existe
+- User exist
 
 ```json
 {
@@ -83,7 +93,8 @@
 > GET  
 > `{{urlBase}}/login`
 
-- No requiere autenticacion
+- Does not require authentication
+
 
 **Body json**
 
@@ -126,7 +137,7 @@
 > GET
 > `{{urlBase}}/search`
 
-### Bearer Authentication
+### Authentication
 
 `bearer {{token}}`
 
